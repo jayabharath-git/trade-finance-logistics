@@ -55,7 +55,7 @@ function onMergeAssets(tx) {
 	var mergeFromAsset = tx.mergeFrom;
 	var mergeToAsset = tx.mergeTo;
 	mergeToAsset.value += tx.mergeFrom.value;
-	return getAssetRegistry('org.trade.net.SampleAsset')
+	return getAssetRegistry('org.trade.net.MergeAssets')
 	.then(function(ar) {
 		assetRegistry = ar;
 		return assetRegistry.update(mergeToAsset);
