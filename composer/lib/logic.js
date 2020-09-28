@@ -47,7 +47,7 @@ async function sampleTransaction(tx) {
 
 /**
 * Sample transaction
-* @param {org.example.biznet.MergeAssets} tx
+* @param {org.trade.net.MergeAssets} tx
 * @transaction
 */
 function onMergeAssets(tx) {
